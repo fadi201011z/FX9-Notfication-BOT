@@ -1,3 +1,16 @@
+const express = require('express');
+const app = express();
+
+// Render سيقوم تلقائياً بتحديد المنفذ عبر متغير البيئة PORT
+const port = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('FX9 Bot is running!');
+});
+
+app.listen(port, () => {
+  console.log(`Express server is listening on port ${port}`);
+});
 require('dotenv').config();
 const { Client, GatewayIntentBits, Partials } = require('discord.js');
 const { loadCommands } = require('./handlers/commandHandler');

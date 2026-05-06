@@ -10,9 +10,10 @@
     "deploy": "node handlers/deployCommands.js"
   },
   "dependencies": {
-    "discord.js": "^14.16.3",
     "axios": "^1.6.8",
+    "discord.js": "^14.16.3",
     "dotenv": "^16.4.5",
+    "express": "^5.2.1",
     "node-cron": "^3.0.3"
   },
   "engines": {
